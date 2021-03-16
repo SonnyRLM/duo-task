@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y python3-pip
 # Copy contents into image
 COPY . . 
 # Install pip dependencies from requirements
-RUN pip3 install -r requirements.txt
+RUN pip3 install Flask==1.1.2 
 # Set YOUR_NAME environment variable
 ENV YOUR_NAME='TEAM4'
 # Expose the correct port
